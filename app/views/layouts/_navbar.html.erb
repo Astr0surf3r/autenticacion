@@ -1,0 +1,12 @@
+
+
+<% if autenticado? %>
+
+	Hola <%= usuario_autenticado.nombre_usuario %> | 
+<%= link_to 'Cerrar Sesion', borrar_sesion_path %>
+
+<% else %>
+
+<%= link_to 'Registrate', pagina_de_registacion_path %> | <%= link_to 'Acceder', acceder_path %> 
+
+<% end %>
